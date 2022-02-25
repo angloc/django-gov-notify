@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1 (2022-02-25)
+
+### Features
+
+- Support for Python 3.10 and Django 4.0
+
+# Changelog
+
 ## 0.3.0 (2021-05-07)
 
 ### Features
