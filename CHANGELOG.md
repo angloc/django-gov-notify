@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2 (2022-05-04)
+
+### Features
+
+- Create dev container and add a live API test
+
 ## 0.3.1 (2022-02-25)
 
 ### Features
