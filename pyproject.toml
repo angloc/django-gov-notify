@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "django-gov-notify"
-version = "0.3.1"
+version = "0.3.2"
 description = "A GOV.UK Notify flavoured Django email backend"
-authors = ["Nick Smith <nick.smith@torchbox.com>"]
+authors = ["Nick Smith <nick.smith@torchbox.com>", "Iain MacKay <iain.mackay4@nhs.net"]
 readme = "README.md"
 homepage = "https://github.com/nimasmi/django-gov-notify"
 repository = "https://github.com/nimasmi/django-gov-notify"

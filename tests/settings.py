@@ -44,3 +44,5 @@ SECRET_KEY = "not needed"
 
 GOVUK_NOTIFY_API_KEY = "not a real API key"
 GOVUK_NOTIFY_PLAIN_EMAIL_TEMPLATE_ID = str(uuid.uuid4())
+
+TEST_RUNNER = "tests.testrunner.TestRunner"

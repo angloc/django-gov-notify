@@ -34,7 +34,7 @@ class NotifyEmailMessage(EmailMessage):
             raise ValueError("Custom headers are not supported.")
         if cc:
             raise ValueError("CC recipients are not supported.")
-        if bcc:
+        if bcc:            
             raise ValueError("BCC recipients are not supported.")
 
         if template_id is not None:
@@ -81,7 +81,11 @@ class NotifyEmailMessage(EmailMessage):
         """Only work with NotifyEmailBackend."""
         from django_gov_notify.backends import NotifyEmailBackend
 
-        return NotifyEmailBackend(fail_silently=fail_silently)
+        # Use a connection if it has been made for us
+        if self.connection is None:
+            return NotifyEmailBackend(fail_silently=fail_silently)
+        else:
+            return self.connection
 
     def validate_fields(self):
         if self.template_id is None:
